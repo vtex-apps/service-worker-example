@@ -6,12 +6,12 @@ With `service-worker` builder, we can allow an app to expose its own implementat
 
 Service Workers allow us to introduce 6 different event handlers, which can be implemented inside the `service-workers/` folder:
 
-1. [Activate](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/activate_event) -> `activate.js`
-2. [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onfetch) -> `fetch.js`
-3. [Install](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/install_event) -> `install.js`
-4. [Message](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/message_event) -> `message.js`
-5. [Push](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/push_event) -> `push.js`
-6. [Sync](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onsync) -> `sync.js`
+1. [activate](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/activate_event) → `activate.js`
+2. [fetch](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onfetch) → `fetch.js`
+3. [install](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/install_event) → `install.js`
+4. [message](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/message_event) → `message.js`
+5. [push](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/push_event) → `push.js`
+6. [sync](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onsync) → `sync.js`
 
 Whatever is outside those 6 files, should be implemented in `header.js`. The implementation result in the VTEX store DevTools should be as follows:
 
