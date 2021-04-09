@@ -4,14 +4,14 @@ Service Workers (SWs) are a poweful tool to handle network requests separate fro
 
 With `service-worker` builder, we can allow an app to expose its own implementation of a Service Worker, enabling VTEX stores to use such Service Worker into their scope.
 
-Service Workers allow us to introduce 6 different functions, which can be implemented inside the `service-workers/` folder:
+Service Workers allow us to introduce 6 different event handlers, which can be implemented inside the `service-workers/` folder:
 
-1. Activate -> `activate.js`
-2. Fetch -> `fetch.js`
-3. Install -> `install.js`
-4. Message -> `message.js`
-5. Push -> `push.js`
-6. Sync -> `sync.js`
+1. [Activate](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/activate_event) -> `activate.js`
+2. [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onfetch) -> `fetch.js`
+3. [Install](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/install_event) -> `install.js`
+4. [Message](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/message_event) -> `message.js`
+5. [Push](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/push_event) -> `push.js`
+6. [Sync](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onsync) -> `sync.js`
 
 Whatever is outside those 6 files, should be implemented in `header.js`. The implementation result in the VTEX store DevTools should be as follows:
 
