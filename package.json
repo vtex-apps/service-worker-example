@@ -1,5 +1,5 @@
 {
-  "name": "service-example",
+  "name": "service-worker-example",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
