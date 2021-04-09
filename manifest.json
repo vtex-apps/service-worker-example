@@ -4,31 +4,13 @@
   "version": "0.0.1",
   "title": "Service Worker Example",
   "description": "Reference app for VTEX IO apps that enable service-worker builder",
-  "mustUpdateAt": "2021-04-30",
   "categories": [],
   "dependencies": {},
   "builders": {
     "docs": "0.x",
     "service-worker": "0.x"
   },
-  "scripts": {
-    "prereleasy": "bash lint.sh"
-  },
   "credentialType": "absolute",
-  "policies": [
-    {
-      "name": "outbound-access",
-      "attrs": {
-        "host": "httpstat.us",
-        "path": "*"
-      }
-    },
-    {
-      "name": "colossus-fire-event"
-    },
-    {
-      "name": "colossus-write-logs"
-    }
-  ],
+  "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
